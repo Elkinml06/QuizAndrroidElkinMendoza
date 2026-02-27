@@ -9,6 +9,7 @@ import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.content.MediaType.Companion.Image
+import androidx.compose.foundation.gestures.snapping.SnapPosition
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -126,17 +127,26 @@ fun Screen2 () {
             .fillMaxSize(),
     ) {
 
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
 
-        Image(
-            painter = image,
-            contentDescription = null,
-        )
-        Text(
-            text="Juan Pérez"
-        )
-        Text(
-            text="Desarrollador Android apasionado por la tecnología y el diseño"
-        )
+        ) {
+            Image(
+                painter = image,
+                contentDescription = null,
+            )
+            Text(
+                text="Juan Pérez",
+                fontWeight = FontWeight.Bold,
+                fontSize = (23.sp)
+            )
+            Text(
+                text="Desarrollador Android apasionado por la tecnología y el diseño",
+                modifier = Modifier
+                    .padding(40.dp,0.dp)
+            )
+        }
+
 
         Row(
             modifier = Modifier
