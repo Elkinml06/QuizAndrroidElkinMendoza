@@ -24,8 +24,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role.Companion.Image
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.elkinmendoza.quizandroid.ui.theme.QuizAndroidElkinMendozaTheme
 
 class MainActivity : ComponentActivity() {
@@ -121,12 +123,97 @@ fun Screen2 () {
     Column(
         modifier = Modifier
             .padding(16.dp,32.dp)
+            .fillMaxSize(),
     ) {
-        Text("Hello world")
+
+
         Image(
             painter = image,
             contentDescription = null,
         )
+        Text(
+            text="Juan Pérez"
+        )
+        Text(
+            text="Desarrollador Android apasionado por la tecnología y el diseño"
+        )
+
+        Row(
+            modifier = Modifier
+                .fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
+
+        ) {
+            Column(
+            ) {
+                Text(
+                    text="150",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = (23.sp)
+
+                )
+                Text(
+                    text ="Post",
+                    fontWeight = FontWeight.Bold,
+                    color = Color.LightGray
+                )
+            }
+            Column(
+
+            ) {
+                Text(
+                    text="150",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = (23.sp)
+
+                )
+                Text(
+                    text ="Post",
+                    fontWeight = FontWeight.Bold,
+                    color = Color.LightGray
+                )
+            }
+            Column(
+
+            ) {
+                Text(
+                    text="150",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = (23.sp)
+
+                )
+                Text(
+                    text ="Post",
+                    fontWeight = FontWeight.Bold,
+                    color = Color.LightGray
+                )
+            }
+
+        }
+        Row(
+            modifier = Modifier
+                .fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Column(
+
+            ){
+                Text("Seguir")
+            }
+            Column(
+
+            ){
+                Text("Mensaje")
+            }
+        }
+        Text(
+            text="Intereses",
+            fontWeight = FontWeight.Bold,
+            fontSize = (23.sp)
+        )
+        Column() {
+
+        }
     }
 
 
