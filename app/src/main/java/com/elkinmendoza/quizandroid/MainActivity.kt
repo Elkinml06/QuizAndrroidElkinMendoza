@@ -211,9 +211,33 @@ fun Screen2 () {
             fontWeight = FontWeight.Bold,
             fontSize = (23.sp)
         )
-        Column() {
+        Column(){
+            Row(
+                modifier = Modifier
+                .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Text("Hola")
+                Text("Hola")
+                Text("Hola")
+            }
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Text("Hola")
+                Text("Hola")
+                Text("Hola")
+            }
 
         }
+        Text(
+            text="Proyectos Recientes",
+            fontWeight = FontWeight.Bold,
+            fontSize = (23.sp)
+        )
+
     }
 
 
